@@ -14,6 +14,9 @@ const countSlice = createSlice({
         },
         reset:(state)=> {
             state.count=0
+        },
+        incrementByAmount:(state,action)=>{
+            state.count += action.payload
         }
     }
 })
